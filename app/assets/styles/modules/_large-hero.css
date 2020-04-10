@@ -1,0 +1,35 @@
+.large-hero {
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+
+  &__image {
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+  }
+
+  &__text-content {
+    color: $mainBlue;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    background-color: rgba(#fff, .5);
+    width: 50%;
+    padding: 3rem;
+  }
+
+  &__title {
+    font-size: 4.5rem;
+    font-weight: 300;
+    margin: 0 0 2rem 0;
+    padding: 0;
+  }
+  
+  &__subtitle {
+    font-size: 3rem;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+  }
+}

@@ -4,4 +4,7 @@
 @import 'base/_global';
 @import 'modules/_fixed-navbar';
 @import 'modules/_main-content';
-@import 'modules/_copyright.css';
+@import 'modules/_copyright';
+@import 'modules/_large-hero';
+@import 'modules/_btn';
+@import 'modules/_benefits.css';

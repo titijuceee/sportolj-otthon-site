@@ -1,0 +1,19 @@
+.btn {
+  background-color: $mainPink;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 1rem 2rem;
+  display: block;
+  font-size: 2rem;
+  font-weight: 600;
+  border-radius: 10px;
+
+  &--right-side {
+    position: absolute;
+    right: 0;
+    bottom: 40%;
+    width: 25%;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+}

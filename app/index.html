@@ -28,14 +28,29 @@
     </aside>
     <main class="main-content">
         <header class="large-hero">
-            <img class="large-hero__image" src="assets/images/lany-futopadon-small.jpg" alt="Lány futópadon edz otthon">
+            <picture>
+                <source srcset="assets/images/lany-futopadon.jpg 1600w, assets/images/lany-futopadon-hi-dpi.jpg 3200w" media="(min-width: 1200px)">
+                <source srcset="assets/images/lany-futopadon-medium.jpg 1200w, assets/images/lany-futopadon-medium-hi-dpi.jpg 2400w" media="(min-width: 800px)">
+                <img class="large-hero__image" srcset="assets/images/lany-futopadon-small.jpg 500w, assets/images/lany-futopadon-small-hi-dpi.jpg 1000w" alt="Lány futópadon edz otthon">
+            </picture>
+            
             <div class="large-hero__text-content">
-                <h1 class="large-hero_title">Futópad, ami otthon tart</h1>
+                <h1 class="large-hero__title">Futópad, ami otthon tart</h1>
                 <h2 class="large-hero__subtitle">FITatHOME 500s</h2>
             </div>
             <a href="#" class="btn btn--right-side">Vedd meg most!</a>
             <div class="benefits">
-                
+                <div class="row">
+                    <div class="column-4">
+                        first benefit
+                    </div>
+                    <div class="column-4">
+                        second benefit
+                    </div>
+                    <div class="column-4">
+                        third benefit
+                    </div>
+                </div>
             </div>
         </header>
         <section class="general-info">
