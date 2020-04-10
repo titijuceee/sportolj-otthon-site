@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Raleway:wght@400;500&display=swap');
 
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
 body {
     background-color: $mainBlue;
     color: #fff;
@@ -12,3 +16,7 @@ h1, h2, h3, h4 {
     font-family: 'Raleway', sans-serif;
 }
 
+a {
+    color: #fff;
+    text-decoration: none;
+}

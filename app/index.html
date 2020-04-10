@@ -6,21 +6,54 @@
     <title>Sportolj Otthon! - Futópad, ami otthon tart</title>
 </head>
 <body>
-    <aside>
-        <div class="logo">
-            <a href="#"><img src="assets/images/logo.svg" alt="Sportolj Otthon"></a>
+    <aside class="fixed-navbar">
+        <div class="fixed-navbar__logo">
+            <a href="#">
+                <picture>
+                    <source srcset="assets/images/logo.svg" media="(min-width: 1200px)">
+                    <img src="assets/images/logo_min.svg" alt="Sportolj Otthon">
+                </picture>
+            </a>
         </div>
         
-        <div class="menu"></div>
-        <ul>
-            <li>Általános</li>
-            <li>Részletek</li>
-            <li>Galéria</li>
-            <li>Adatok</li>
-            <li>Vélemények</li>
+        <div class="fixed-navbar__menu"></div>
+        <ul class="fixed-navbar__list">
+            <li class="fixed-navbar__item"><a class="fixed-navbar__link" href="#">Általános</a></li>
+            <li class="fixed-navbar__item"><a class="fixed-navbar__link" href="#">Részletek</a></li>
+            <li class="fixed-navbar__item"><a class="fixed-navbar__link" href="#">Galéria</a></li>
+            <li class="fixed-navbar__item"><a class="fixed-navbar__link" href="#">Adatok</a></li>
+            <li class="fixed-navbar__item"><a class="fixed-navbar__link" href="#">Vélemények</a></li>
         </ul>
         <div class="copyright">Copyright 2020</div>
     </aside>
+    <main class="main-content">
+        <header>
+            header area
+        </header>
+        <section class="general-info">
+            general-info area
+        </section>
+        <section class="features">
+            features
+        </section>
+        <section class="gallery">
+            gallery
+        </section>
+        <section class="details">
+            details
+        </section>
+        <section class="bottom">
+            <div class="testimonials">
+                testimonials
+            </div>
+            <div class="offer">
+                offer
+            </div>
+            <footer>
+                footer
+            </footer>
+        </section>
+    </main>
 
     <script src="bundled.js"></script>
 </body>

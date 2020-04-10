@@ -1,3 +1,7 @@
 @import 'normalize.css';
 @import 'base/_variables';
+@import 'base/_mixins';
 @import 'base/_global';
+@import 'modules/_fixed-navbar';
+@import 'modules/_main-content';
+@import 'modules/_copyright.css';
