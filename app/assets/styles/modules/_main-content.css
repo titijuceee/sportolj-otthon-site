@@ -1,7 +1,8 @@
 .main-content {
+    width: 100%;
 
-    @mixin atSmall {
-        width: 83%;
+    @mixin atLarge {
+        width: calc(100% - 200px);
         float: right;
     }
    

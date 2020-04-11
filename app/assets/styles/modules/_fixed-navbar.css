@@ -1,37 +1,59 @@
 .fixed-navbar {
     position: fixed;
-    display: none;
-
+    left: -190px;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 200px;
+    background-color: $mainGreen;
+    color: $mainBlue;
 
     @mixin atLarge {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        height: 100vh;
-        width: 17%;
+        left: 0;
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: calc(50%-10px);
+        right: -10px;
+        width: 15px;
+        height: 15px;
+        border-top: 2px solid $mainPink;
+        border-right: 2px solid $mainPink;
+        transform: rotate(45deg);
+        z-index: 2;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: calc(50%-25px);
+        right: -25px;
+        width: 50px;
+        height: 50px;
         background-color: $mainGreen;
-        color: $mainBlue;
+        border-radius: 50%;
     }
 
     &__logo {
-        width: 70%;
-        height: auto;
+        width: 7rem;
         background-color: $mainBlue;
-        display: flex;
         position: absolute;
         top: 0;
         border-bottom-left-radius: 10px;
         border-bottom-right-radius: 10px;
+        padding: 1rem;
 
         a {
             display: block;
-            margin: auto;
-            padding: 1rem 0;
         }
 
         img {
-            width: 6em;
+            width: 100%;
             height: auto;
             display: block;
         }
@@ -39,5 +61,19 @@
 
     &__link {
         color: $mainBlue;
+        display: block;
+        text-align: center;
+        padding: 0.5rem 0;
+        font-size: 1.2rem;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 500;
+        height: 40px;
+        
+
+        &:hover {
+            color: $mainPink;
+            border-top: 2px solid $mainPink;
+            border-bottom: 2px solid $mainPink;
+        }
     }
 }
