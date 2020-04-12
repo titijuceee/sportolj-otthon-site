@@ -13,8 +13,12 @@
     position: absolute;
     right: 0;
     bottom: 35%;
-    width: 30%;
+    width: 60%;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
+
+    @mixin atSmall {
+      width: 30%;
+    }
   }
 }

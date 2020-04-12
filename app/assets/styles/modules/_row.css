@@ -1,7 +1,12 @@
 .row {
+    display: block;
 
-    display: flex;
-    justify-content: space-between;
-    width: 100%;    
+    @mixin atSmall {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;   
+    }
+
+       
 
 }
